@@ -3,9 +3,9 @@
 }
 
 .fields {
-    background-color: dodgerblue;
-    font-family: Calibri, Arial, serif;
-    font-size: 1em;
+    background-color: steelblue;
+    font-family: Arial, serif;
+    font-size: 0.8em;
     color: black;
     border: 1px solid dodgerblue;
     border-radius: 3px;
@@ -15,14 +15,17 @@
 
 .left {
     display: inline-block;
+    vertical-align: top;
     color: white;
     width: 350px;
     margin: 1em;
     padding-left: 15px;
 }
 
+
 .middle {
     display: inline-block;
+    vertical-align: top;
     color: white;
     width: 350px; 
     margin: 1em;
@@ -31,14 +34,47 @@
 
 .right {
     display: inline-block;
+    vertical-align: top;
     color: white;
     width: 350px;
     margin: 1em;
     padding-left: 10px;
+    padding-bottom: 5px;
 }
 
-@media (min-width: 800px) {
-    .grid-1-800 {
-        min-width: 200px;
+p {
+    margin-bottom: 0.2em;
+}
+
+input, textarea, select {
+    background-color: steelblue;
+    color: white;
+    border: 2px solid white;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold; 
+}
+
+
+input, select {
+    width: 300px;
+    height: 30px;
+
+}
+
+input:focus {
+    border-color: darkslategray; 
+    color: darkslategray;
+}
+
+textarea:focus {
+    border-color: darkslategray;
+    color: darkslategray;
+}
+
+@media (max-width: 350px) {
+    .grid-1-350 {
+        width: auto;
     }
 }
+
